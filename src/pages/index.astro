@@ -1,14 +1,12 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import HomePage from "../components/Home/Home";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Welcome to Astro." page="home">
-	<main>
-		<h1>Home</h1>
-	</main>
+  <main>
+    <HomePage client:load />
+  </main>
 </Layout>
 
-<style>
-	
-	
-</style>
+<style></style>
